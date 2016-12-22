@@ -19,3 +19,9 @@ Route::get('/user', function (Request $request) {
 
 
 Route::resource('tests', 'testAPIController');
+
+Route::resource('reports', 'reportAPIController');
+
+Route::resource('taarifas', 'taarifaAPIController');
+
+Route::resource('maonis', 'maoniAPIController');
