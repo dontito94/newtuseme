@@ -3,7 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 
-class CreatetaarifasTable extends Migration
+class CreateriportsTable extends Migration
 {
 
     /**
@@ -13,10 +13,10 @@ class CreatetaarifasTable extends Migration
      */
     public function up()
     {
-        Schema::create('taarifas', function (Blueprint $table) {
+        Schema::create('riports', function (Blueprint $table) {
             $table->increments('id');
             $table->string('position');
-            $table->string('heading');
+            $table->string('introduction');
             $table->string('description');
             $table->timestamps();
             $table->softDeletes();
@@ -30,6 +30,6 @@ class CreatetaarifasTable extends Migration
      */
     public function down()
     {
-        Schema::drop('taarifas');
+        Schema::drop('riports');
     }
 }

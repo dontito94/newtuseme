@@ -18,7 +18,7 @@ class CreatemaonisTable extends Migration
             $table->string('catergory');
             $table->string('title');
             $table->string('target');
-            $table->string('discription');
+            $table->string('description');
             $table->timestamps();
             $table->softDeletes();
         });

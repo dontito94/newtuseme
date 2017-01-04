@@ -15,11 +15,14 @@ class CreatereportsTable extends Migration
     {
         Schema::create('reports', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('name');
-            $table->string('title');
+            $table->string('position');
+            $table->string('introduction');
+            $table->string('desciption');
             $table->timestamps();
             $table->softDeletes();
         });
+
+        
     }
 
     /**

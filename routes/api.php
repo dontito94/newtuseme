@@ -25,3 +25,7 @@ Route::resource('reports', 'reportAPIController');
 Route::resource('taarifas', 'taarifaAPIController');
 
 Route::resource('maonis', 'maoniAPIController');
+
+Route::resource('riports', 'riportAPIController');
+
+Route::resource('riports', 'riportAPIController');

@@ -6,15 +6,15 @@ use Eloquent as Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
 /**
- * Class report
+ * Class riport
  * @package App\Models
- * @version December 22, 2016, 9:20 am UTC
+ * @version January 4, 2017, 9:26 pm UTC
  */
-class report extends Model
+class riport extends Model
 {
     use SoftDeletes;
 
-    public $table = 'reports';
+    public $table = 'riports';
     
 
     protected $dates = ['deleted_at'];
@@ -34,7 +34,7 @@ class report extends Model
     protected $casts = [
         'position' => 'string',
         'introduction' => 'string',
-        'description' =>'string'
+        'description' => 'string'
     ];
 
     /**
@@ -46,7 +46,7 @@ class report extends Model
         'position' => 'required',
         'introduction' => 'required',
         'description' => 'required'
-     ];
+    ];
 
     
 }
